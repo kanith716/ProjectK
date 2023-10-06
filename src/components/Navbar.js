@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { SlSocialFacebook, SlSocialInstagram, SlSocialLinkedin, SlSocialPintarest, SlSocialSpotify } from "react-icons/sl";
 
