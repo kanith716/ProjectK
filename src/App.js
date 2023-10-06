@@ -68,6 +68,7 @@ function App() {
                     <input placeholder="FeedBack*" type="text" className="focus:border-none focus:outline-none bg-transparent relative z-50 w-full text-[15px] py-2 px-5" />
                   </div>
                 </div> */}
+                
                 <div className='inner-shadow flex justify-center mx-auto relative mt-8'>
                   <div className=' inline-block grow   ease-out duration-300 '>
                     <input type="submit" className="hover:bg-[#fff] hover:text-[var(--color)] shadow-box-overlay bg-transparent relative z-50 w-full text-lg py-2 px-10 text-white font-2xl  rounded-[20px]   cursor-pointer inline-block" />
