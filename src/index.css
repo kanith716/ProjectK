@@ -1,3 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-dark:#5651e5;
+  --primary-light:#709dff;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +19,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+@layer base{
+  button {
+    @apply px-4 text-white border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] scroll-smooth
+  }
+  li {
+    @apply p-4 text-sm
+  }
 }

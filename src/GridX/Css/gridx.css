@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bg-color: #0f0f0f;
+    --color: #9f9f9f;
+    --dark:#323232;
+}
+.shadow-box-overlay:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(120deg, hsla(0, 0%, 100%, .3), hsla(0, 0%, 100%, .05));
+    border-radius: 30px;
+    opacity: .25;
+}
+
+.inner-shadow:before{
+        content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: .1;
+            background: linear-gradient(120deg, hsla(0, 0%, 100%, .3), hsla(0, 0%, 100%, .05));
+            border-radius: 30px;
+}
+
+@layer base {
+    button {
+        @apply px-4 text-white border bg-gradient-to-r from-[var(--bg-color)] to-[var(--color)] scroll-smooth
+    }
+
+    li {
+        @apply p-4 text-sm
+    }
+    body{
+        @apply text-[var(--color)]
+    }
+}
