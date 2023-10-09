@@ -13,7 +13,7 @@ function PortfollioAbout() {
                     </div>
                     <div className='px-8 self-center'>
                         <h4 className='text-md font-semibold pb-1'>A WEB DESIGNER</h4>
-                        <h1 className='text-white pb-3  text-4xl font-semibold'>David Henderson.</h1>
+                        <h1 className='text-white pb-3  text-4xl font-semibold'>Kanithkar</h1>
                         <p>I am a Web Designer based in san francisco.</p>
                         <a href='#' className='items-end flex justify-end mr-[-20px] cursor-pointer z-[2] relative opacity-60'>
                             <img src='./Image/icon.svg' className='' />

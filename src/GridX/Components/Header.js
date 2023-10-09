@@ -3,7 +3,8 @@ import { useState } from 'react';
 import '../Css/gridx.css';
 import { GiHamburgerMenu } from "react-icons/gi";
 
-function Header(subscribeHandle) {
+function Header(props) {
+   
 
     const [nav, setNave] = useState(false);
     
@@ -55,7 +56,10 @@ function Header(subscribeHandle) {
               <p className='text-white font-2xl bg-[var(--dark)] rounded-[20px] py-[10px] px-6 hidden sm:hidden cursor-pointer'>Log In </p>
           </div>
           <div>
-              <p onClick={subscribeHandle.onClick} className='hidden sm:block text-white font-2xl bg-[var(--dark)] rounded-[20px] py-[10px] px-6 cursor-pointer'>Log In </p>
+            
+              <p onClick={props.onClick} className={
+                  props.subscribeStatus ? 'hidden ' : 'hidden sm:block text-white font-2xl bg-[var(--dark)] rounded-[20px] py-[10px] px-6 cursor-pointer'
+              }>Log In </p>
           </div>
           <div>
               <p>Let's Talk</p>

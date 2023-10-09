@@ -1,6 +1,40 @@
 import React from 'react'
 
 function Testimonials() {
+    const expStartDate = new Date('2021-02-11T09:00:00');
+    const expCurrentDate = new Date();
+
+    // Calculate the time difference in milliseconds
+    const timeDifference = expCurrentDate - expStartDate;
+
+    // Calculate milliseconds in a day, an hour, and a year
+    const millisecondsInDay = 24 * 60 * 60 * 1000;
+    const millisecondsInHour = 60 * 60 * 1000;
+    const millisecondsInYear = 365.25 * 24 * 60 * 60 * 1000; // Accounting for leap years
+
+    // Calculate the total number of years
+    const years = Math.floor(timeDifference / millisecondsInYear);
+
+    // Calculate the remaining time difference in milliseconds after subtracting full years
+    const remainingTimeDifferenceAfterYears = timeDifference - (years * millisecondsInYear);
+    const totalDays = timeDifference / millisecondsInDay;
+   
+    // Calculate the total number of days
+    const days = Math.floor(remainingTimeDifferenceAfterYears / millisecondsInDay);
+
+    // Calculate the remaining time difference in milliseconds after subtracting full days
+    const remainingTimeDifferenceAfterDays = remainingTimeDifferenceAfterYears - (days * millisecondsInDay);
+
+    // Calculate the total number of hours
+    const hours = Math.floor(remainingTimeDifferenceAfterDays / millisecondsInHour);
+    const totalHours = timeDifference / millisecondsInHour; 
+    console.log(totalHours.toFixed())
+
+
+    // Calculate hours
+
+   
+
   return (
     <div>
         <div className='container  m-auto w-[90%] mx-auto mt-5 sm:w-full'>
@@ -11,22 +45,22 @@ function Testimonials() {
                           <div className='inner-shadow  sm:mt-0 min-w-[170px] relative py-7 px-7 '>
                               <img alt='logo' src='./Image/bg1.png' className='w-full h-full absolute top-0 left-0 rounded-[30px] object-fit opacity-10 ' />
                               <div className='shadow-box-overlay text-white text-center  flex-row grid grid-rows-1 overflow-hidden py-4'>
-                                 <h3 className='text-4xl font-semibold pb-3'>07</h3>
-                                  <p className='text-[--color] text-xs'>Years <br />Experience</p>
+                                 <h3 className='text-4xl font-semibold pb-3'>+{years}</h3>
+                                  <p className='text-[--color] text-xs capitalize '> Experience in  <br/> Years</p>
                               </div>
                           </div>
                           <div className='inner-shadow mt-5 sm:mt-0 min-w-[170px] relative py-7 px-7 '>
                               <img alt='logo' src='./Image/bg1.png' className='w-full h-full absolute top-0 left-0 rounded-[30px] object-fit opacity-10 ' />
                               <div className='shadow-box-overlay text-white text-center flex-row grid grid-rows-1 overflow-hidden py-4'>
-                                  <h3 className='text-4xl font-semibold pb-3'>+125</h3>
-                                  <p className='text-[--color] text-xs'>CLIENTS  <br />WORLDWIDE</p>
+                                  <h3 className='text-4xl font-semibold pb-3'>+{totalDays.toFixed()}</h3>
+                                  <p className='text-[--color] text-xs capitalize'>Days  <br />Experience</p>
                               </div>
                           </div>
                           <div className='inner-shadow mt-5 sm:mt-0 min-w-[170px] relative py-7 px-7 '>
                               <img alt='logo' src='./Image/bg1.png' className='w-full h-full absolute top-0 left-0 rounded-[30px] object-fit opacity-10 ' />
                               <div className='shadow-box-overlay text-white text-center flex-row grid grid-rows-1 overflow-hidden py-4'>
-                                  <h3 className='text-4xl font-semibold pb-3'>+213</h3>
-                                  <p className='text-[--color] text-xs'>Total  <br />Projects</p>
+                                  <h3 className='text-4xl font-semibold pb-3'>+{totalHours.toFixed()    }</h3>
+                                  <p className='text-[--color] text-xs capitalize'>Time  <br />Experience</p>
                               </div>
                           </div>
                     </div>

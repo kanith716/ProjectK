@@ -77,7 +77,7 @@ function App() {
 
   return (
     <div className="bg-[var(--bg-color)] pb-10">
-      <Header onClick={subscribeHandle}></Header>
+      <Header onClick={subscribeHandle} subscribeStatus={subscribe}></Header>
     {
       subscribe ?  (<Main></Main >) : (<Popup></Popup>)
     }
