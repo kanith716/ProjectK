@@ -37,15 +37,15 @@ function Popup() {
         <div className='bg-[var(--bg-color)] pb-10'>
 
             <div className='container  m-auto w-[90%] mx-auto sm:w-full mt-10'>
-                <div className='items-center flex   flex-col  sm:flex-row  p-10'>
-                    <div className='w-[35%] self-center shadow-box-overlay relative p-5 '>
-                        <div className='flex-none  bg-gradient-to-r from-blue-400 via-blue-200 to-blue-500 w-[340px] h-[330px]  rounded-[30px] mx-auto overflow-hidden'>
+                <div className='items-center lg:flex   flex-col  sm:flex-row  sm:p-10'>
+                    <div className='lg:w-[45%] xl:w-[35%] self-center w-[100%] shadow-box-overlay relative p-5 '>
+                        <div className='flex-none  bg-gradient-to-r from-blue-400 via-blue-200 to-blue-500 h-[180px] w-[200px] sm:w-[340px] sm:h-[330px]  rounded-[30px] mx-auto overflow-hidden'>
                             <a href='#' className='inline-block'>
                                 <img src='./Image/me2.png' className='object-fit' alt='logo' />
                             </a>
                         </div>
                     </div>
-                    <div className='relative  w-[65%] ml-5'>
+                    <div className='relative  lg:w-[55%] xl:w-[65%] lg:ml-5 pt-5 lg:pt-0'>
                         <div className={
                             useName ? 'flex justify-between items-center py-5 px-0': 'hidden'
                         }>
@@ -60,12 +60,12 @@ function Popup() {
                             <img className='flex-none' src='./Image/star-2.png' />
                         </div>
                         <div className='relative'>
-                            <div className='shadow-box-overlay pt-8 px-6 w-[80%]'>
+                            <div className='shadow-box-overlay pt-8 px-6 sm:w-[80%]'>
                                 <h2 className='text-4xl text-white font-semibold'>Welcome to My Portfolio</h2>
                                 <p className='pt-2'>My name is Kanith. I'm a web developer passionate about creating user-friendly websites. Skilled in HTML, CSS, and JavaScript. Explore my exciting projects!</p>
                             </div>
-                            <div className='flex items-end justify-between px-5 pb-8'>
-                                <div className='w-[80%]'>
+                            <div className='sm:flex items-end justify-between px-5 pb-8'>
+                                <div className='sm:w-[80%]'>
                                     <p className='text-2xl text-white font-semibold  pb-1 pt-10'>Here's a fun quote to brighten your day:</p>
 
 
@@ -77,7 +77,7 @@ function Popup() {
 
                                 </div>
 
-                                <div className='float-right'>
+                                <div className='sm:float-right'>
                                     <p className='text-xl text-white font-semibold  pb-1 pt-10'>Date</p>
                                     <p>{`${month} ${currentDate.getDate()}, ${currentDate.getFullYear()}`}</p>
                                 </div>

@@ -63,13 +63,20 @@ function App() {
     sessionStorage.setItem('email', email);
     popOpen(!popClose);
   }
+  const notIntrest = () =>{
+    alert();
+    sessionStorage.setItem('notIntrest', "Not Intrest");
+    
+    popOpen(!popClose);
+  }
 
 
   //loading time user login check 
   useEffect(()=>{
     var userNameStore = sessionStorage.getItem("name");
     var userEmailStore = sessionStorage.getItem("email");
-    if (userEmailStore || userNameStore) {
+    var userIntrest = sessionStorage.getItem("notIntrest");
+    if (userEmailStore || userNameStore || userIntrest) {
       subscribed(true)
     }
   }, [Popup])
@@ -84,7 +91,7 @@ function App() {
       <div className={
         popClose ? 'fixed top-0 left-0 w-full h-full bg-[#242424] z-50':'hidden'
       }>
-        <div className="absolute top-[50%] left-[50%] py-10   w-[50%]  h-full translate-y-[-50%] translate-x-[-50%]  bg-[#76747400]">
+        <div className="absolute top-[50%] left-[50%] py-10  w-[90%] md:w-[50%]  h-full translate-y-[-50%] translate-x-[-50%]  bg-[#76747400]">
           <div className="  w-[100%] mx-auto h-full relative pt-5">
             <div className="text-white  shadow-box-overlay text-xl font-semibold">
              
@@ -114,7 +121,7 @@ function App() {
                   </div>
                 </div>
                 <p className="pt-10 md:w-[80%]   text-2xl mx-auto text-center">Not interested? No worries! There's a "Not Interested" option too.<BiHappyAlt className="text-2xl inline-block text-[#ffef17] mr-2"></BiHappyAlt></p>
-                <button className="shadow-box-overlay bg-transparent relative z-50 w-full text-lg  px-10 text-white font-2xl  rounded-[20px] border-none py-2 my-5  cursor-pointer inline-block">Not Interested</button>
+                <button type="button" className="shadow-box-overlay bg-transparent relative z-50 w-full text-lg  px-10 text-white font-2xl  rounded-[20px] border-none py-2 my-5  cursor-pointer inline-block" onClick={notIntrest}>Not Interested</button>
               </form>
             </div>
           </div>

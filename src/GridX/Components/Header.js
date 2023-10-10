@@ -7,7 +7,6 @@ function Header(props) {
    
 
     const [nav, setNave] = useState(false);
-    
 
     function handleClick() {
         setNave(!nav)

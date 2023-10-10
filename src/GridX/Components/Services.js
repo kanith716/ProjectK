@@ -10,7 +10,7 @@ function Services() {
   return (
     <div>
           <div className='container m-auto w-[90%] sm:w-full'>
-              <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
+              <div className='grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-4'>
                   <div className='relative mt-5 pb-5 sm:pb-0 col-span-4 sm:col-span-2 lg:col-span-1'>
                       <img alt='logo' src='./Image/bg1.png' className='w-full h-full absolute top-0 left-0 rounded-[30px] object-fit opacity-10 ' />
                       <div className='shadow-box-overlay  flex-row grid grid-rows-1 overflow-hidden py-4'>

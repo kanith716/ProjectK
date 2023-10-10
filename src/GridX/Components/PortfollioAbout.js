@@ -48,7 +48,7 @@ function PortfollioAbout() {
                         <div className='relative mt-5 pb-5 sm:pb-0'>
                             <img alt='logo' src='./Image/bg1.png' className='w-full h-full absolute top-0 left-0 rounded-[30px] object-fit opacity-10 ' />
                             <div className='shadow-box-overlay  flex-row grid grid-rows-1 overflow-hidden py-4'>
-                                <img src='./Image/my-works.png' className='mx-auto' />
+                                <img src='./Image/pr-3.png' className='mx-auto' />
                             </div>
                             <div className='flex items-center self-center justify-between'>
                                 <div className='ps-5 pt-3'>

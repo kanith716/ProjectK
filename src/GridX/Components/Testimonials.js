@@ -53,14 +53,14 @@ function Testimonials() {
                               <img alt='logo' src='./Image/bg1.png' className='w-full h-full absolute top-0 left-0 rounded-[30px] object-fit opacity-10 ' />
                               <div className='shadow-box-overlay text-white text-center flex-row grid grid-rows-1 overflow-hidden py-4'>
                                   <h3 className='text-4xl font-semibold pb-3'>+{totalDays.toFixed()}</h3>
-                                  <p className='text-[--color] text-xs capitalize'>Days  <br />Experience</p>
+                                  <p className='text-[--color] text-xs capitalize'>Experience in  <br />Days</p>
                               </div>
                           </div>
                           <div className='inner-shadow mt-5 sm:mt-0 min-w-[170px] relative py-7 px-7 '>
                               <img alt='logo' src='./Image/bg1.png' className='w-full h-full absolute top-0 left-0 rounded-[30px] object-fit opacity-10 ' />
                               <div className='shadow-box-overlay text-white text-center flex-row grid grid-rows-1 overflow-hidden py-4'>
                                   <h3 className='text-4xl font-semibold pb-3'>+{totalHours.toFixed()    }</h3>
-                                  <p className='text-[--color] text-xs capitalize'>Time  <br />Experience</p>
+                                  <p className='text-[--color] text-xs capitalize'>Experience in  <br />Hours</p>
                               </div>
                           </div>
                     </div>
