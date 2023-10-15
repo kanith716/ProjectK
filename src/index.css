@@ -7,7 +7,7 @@
   --primary-light:#709dff;
 }
 
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -19,14 +19,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 
-@layer base{
-  button {
-    @apply px-4 text-white border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] scroll-smooth
-  }
-  li {
-    @apply p-4 text-sm
-  }
+@layer base {
+    button {
+        @apply px-4 text-white border bg-gradient-to-r from-[var(--bg-color)] to-[var(--color)] scroll-smooth
+    }
+
+    li {
+        @apply p-4 text-sm
+    }
+    body{
+        @apply text-[var(--color)]
+    }
 }
