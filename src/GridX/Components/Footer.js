@@ -25,7 +25,7 @@ function Footer() {
                     </ul>
                   </div>
                   <div>
-                      <p class="text-gray">© All rights reserved by <span>WordPress River</span></p>
+                      <p className="text-gray">© All rights reserved by <span>WordPress River</span></p>
                   </div>
             </div>
         </div>

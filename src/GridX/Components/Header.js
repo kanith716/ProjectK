@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import '../Css/gridx.css';
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import { Link } from "react-router-dom";
 function Header(props) {
    
 
@@ -20,16 +20,20 @@ function Header(props) {
           }>
               <ul className='block md:flex justify-between items-center'>
                   <li>
-                      <a href='/'>Home</a>
+                      <Link to="/">Home</Link>
+                     
                   </li>
                   <li>
-                      <a href='/about'>About</a>
+                      <Link to="/about">About</Link>
+                      
                   </li>
                   <li>
-                      <a href='/works'>Works</a>
+                      <Link to="/works">Works</Link>
+                
                   </li>
                   <li>
-                      <a href='/contact'>Contact</a>
+                      <Link to="/contact">Contact</Link>
+                     
                   </li>
               </ul>
               <p className='text-white font-2xl bg-[var(--dark)] flex-col items-center  rounded-[20px] py-[10px] px-6 my-6 sm:hidden inline-block cursor-pointer'>Log In </p>
