@@ -14,15 +14,15 @@ import ErrorPage from "./GridX/Components/404";
 import axios from 'axios';
 import CisecoApp from "./Ciseco/CisecoApp";
 
-// const fetchData = async () => {
-//   try {
-//     const response = await axios.get('http://localhost:5000'); // Replace with your server URL
-//     console.log(response.data);
-//   } catch (error) {
-//     console.error(error);
-//   }
-// };
-// fetchData();
+const fetchData = async () => {
+  try {
+    const response = await axios.get('http://localhost:5000'); // Replace with your server URL
+    console.log(response.data);
+  } catch (error) {
+    console.error(error);
+  }
+};
+fetchData();
 
 
 
