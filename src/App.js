@@ -13,6 +13,7 @@ import { Route, Routes } from "react-router-dom";
 import ErrorPage from "./GridX/Components/404";
 import axios from 'axios';
 import CisecoApp from "./Ciseco/CisecoApp";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const fetchData = async () => {
   try {

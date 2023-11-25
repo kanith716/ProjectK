@@ -8,16 +8,18 @@ import Footer from './Footer';
 import Banner from './Banner';
 import Discover from './Discover';
 import ProductList from './ProductList';
+import BannerUpload from './AdminComponents/BannerUpload.js';
 
 
 function Main() {
   return (
     <div>
-          <Header></Header>
+      <BannerUpload></BannerUpload>
+          {/* <Header></Header>
           <Banner></Banner>
           <Discover></Discover>
           <ProductList></ProductList>
-          <Footer></Footer>
+          <Footer></Footer> */}
     </div>
   )
 }
