@@ -14,12 +14,12 @@ import BannerUpload from './AdminComponents/BannerUpload.js';
 function Main() {
   return (
     <div>
-      <BannerUpload></BannerUpload>
-          {/* <Header></Header>
+      {/* <BannerUpload></BannerUpload> */}
+          <Header></Header>
           <Banner></Banner>
           <Discover></Discover>
           <ProductList></ProductList>
-          <Footer></Footer> */}
+          <Footer></Footer>
     </div>
   )
 }

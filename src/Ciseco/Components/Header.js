@@ -31,7 +31,7 @@ function Header() {
                 </li>
                 <li className='align-text-bottom inline-block sports-link relative  group'>
                   <a className='font-semibold text-[16px] group-hover:block   text-[var(--darkblue)]' href='./sports'>Sports<RiArrowDropDownLine className='inline-block text-xl font-normal'></RiArrowDropDownLine></a>
-                  <div className='drop-menu sports-drop group-hover:block hidden border  bg-white z-10 top-[58px] absolute w-[80vw] left-[50%] translate-x-[-50%]'>
+                  <div className='drop-menu sports-drop group-hover:block hidden border  bg-white z-[99999] top-[58px] absolute w-[80vw] left-[50%] translate-x-[-50%]'>
                     <div className='grid grid-col-4 grid-cols-12 gap-4'>
                       <div className='col-span-3'>
                         <div>

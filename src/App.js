@@ -13,7 +13,7 @@ import { Route, Routes } from "react-router-dom";
 import ErrorPage from "./GridX/Components/404";
 import axios from 'axios';
 import CisecoApp from "./Ciseco/CisecoApp";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const fetchData = async () => {
   try {
@@ -76,9 +76,9 @@ function App() {
       <CisecoApp></CisecoApp>
       <div className="bg-[var(--bg-color)] pb-10 hidden">
         
-        <Header onClick={subscribeHandle} subscribeStatus={subscribe}></Header>
-        <Routes>
-          {/* <Route path="/" element={subscribe ? (<Main></Main >) : (<Popup></Popup>)} /> */}
+        {/* <Header onClick={subscribeHandle} subscribeStatus={subscribe}></Header> */}
+        {/* <Routes>
+          <Route path="/" element={subscribe ? (<Main></Main >) : (<Popup></Popup>)} />
           <Route path="/" element={
 
             subscribe ? (<Main></Main >) : (<Popup subscribeHandle={subscribeHandle} popCloseStatus={popClose} popOpenStatus={popOpen}></Popup>)
@@ -86,12 +86,12 @@ function App() {
           } />
           <Route path="/about" element={<About></About>} />
           <Route path="*" element={<ErrorPage></ErrorPage>} />
-        </Routes>
+        </Routes> */}
 
 
 
 
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </div>
     </main>
    

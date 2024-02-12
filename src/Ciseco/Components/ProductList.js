@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { AiFillStar, AiOutlineHeart } from "react-icons/ai";
+import { IoBagAdd } from "react-icons/io5";
 
 
 
@@ -36,12 +37,15 @@ function ProductList() {
                 <h2 className='text-4xl font-semibold px-5 pb-10'><span className='text-[var(--darkblue)]'>New Arrivals.</span>REY backpacks & bags</h2>
                 <div className='grid grid-cols-12 grid-col-4 gap-6'>
                     <div className='col-span-3'>
-                        <div className='bg-violet-50  rounded-[25px]  relative'>
-                            <img src='/ciseco-img/5-1.png'></img>
+                        <div className='bg-violet-50  rounded-[25px]  relative group'>
+                            <img src='/ciseco-img/5-1.png' className='group-hover:block'></img>
                             <div className='absolute flex items-center justify-center rounded-xl top-5  w-[30px] h-[30px] right-8 bg-white '>
                                 <AiOutlineHeart className='text-[var(--darkblue)] text-xl'></AiOutlineHeart>
                             </div>
-
+                            <div className='group-hover:block  hidden text-center'>
+                                <h3 className='cursor-pointer inline-block rounded-lg py-1 px-3 text-white font-semibold translate-y-[-50%] translate-x-[-50%] text-sm absolute bottom-1  bg-black'><span className="inline-block pr-1"><IoBagAdd /></span>Add To Bag</h3>
+                            </div>
+                            
                         </div>
                         <div className='pt-5'>
                             <div className="flex space-x-1">
@@ -74,10 +78,13 @@ function ProductList() {
                         </div>
                     </div>
                     <div className='col-span-3'>
-                        <div className='bg-violet-50  rounded-[25px]  relative'>
-                            <img src='/ciseco-img/5-1.png'></img>
+                        <div className='bg-violet-50  rounded-[25px]  min-h-[300px] relative group'>
+                            <img src='/ciseco-img/sport-6.png' className="group-hover:block"></img>
                             <div className='absolute flex items-center justify-center rounded-xl top-5  w-[30px] h-[30px] right-8 bg-white '>
                                 <AiOutlineHeart className='text-[var(--darkblue)] text-xl'></AiOutlineHeart>
+                            </div>
+                             <div className='group-hover:block  hidden text-center'>
+                                <h3 className='cursor-pointer inline-block rounded-lg py-1 px-3 text-white font-semibold translate-y-[-50%] translate-x-[-50%] text-sm absolute bottom-1  bg-black'><span className="inline-block pr-1"><IoBagAdd /></span>Add To Bag</h3>
                             </div>
                         </div>
                         <div className='pt-5'>
@@ -112,10 +119,13 @@ function ProductList() {
                         </div>
                     </div>
                     <div className='col-span-3'>
-                        <div className='bg-violet-50  rounded-[25px]  relative'>
-                            <img src='/ciseco-img/5-1.png'></img>
+                        <div className='bg-violet-50  rounded-[25px]  relative group'>
+                            <img src='/ciseco-img/8.png' className='group-hover:block'></img>
                             <div className='absolute flex items-center justify-center rounded-xl top-5  w-[30px] h-[30px] right-8 bg-white '>
                                 <AiOutlineHeart className='text-[var(--darkblue)] text-xl'></AiOutlineHeart>
+                            </div>
+                             <div className='group-hover:block  hidden text-center'>
+                                <h3 className='cursor-pointer inline-block rounded-lg py-1 px-3 text-white font-semibold translate-y-[-50%] translate-x-[-50%] text-sm absolute bottom-1  bg-black'><span className="inline-block pr-1"><IoBagAdd /></span>Add To Bag</h3>
                             </div>
                         </div>
                         <div className='pt-5'>
@@ -150,10 +160,13 @@ function ProductList() {
                         </div>
                     </div>
                     <div className='col-span-3'>
-                        <div className='bg-violet-50  rounded-[25px]  relative'>
-                            <img src='/ciseco-img/5-1.png'></img>
+                        <div className='bg-violet-50  rounded-[25px] min-h-[300px]  relative group'>
+                            <img src='/ciseco-img/sport-9.png' className='group-hover:block'></img>
                             <div className='absolute flex items-center justify-center rounded-xl top-5  w-[30px] h-[30px] right-8 bg-white '>
                                 <AiOutlineHeart className='text-[var(--darkblue)] text-xl'></AiOutlineHeart>
+                            </div>
+                             <div className='group-hover:block  hidden text-center'>
+                                <h3 className='cursor-pointer inline-block rounded-lg py-1 px-3 text-white font-semibold translate-y-[-50%] translate-x-[-50%] text-sm absolute bottom-1  bg-black'><span className="inline-block pr-1"><IoBagAdd /></span>Add To Bag</h3>
                             </div>
                         </div>
                         <div className='pt-5'>
